@@ -7,7 +7,7 @@ public class OperatorRegistryProvider implements OperatorRegistry{
     private List<OperatorRegistry> operatorRegistries;
 
     @Override
-    public DefaultBinaryOperation getOperator(OperatorDefinition definition) {
+    public BinaryOperation getOperator(OperatorDefinition definition) {
         for (OperatorRegistry operatorRegistry : operatorRegistries) {
             try {
                 return operatorRegistry.getOperator(definition);

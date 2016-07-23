@@ -1,10 +1,17 @@
 package ua.goit.java.calculator.lib;
 
-/**
- * Created by Roman D. on 18.07.2016.
- */
+import java.util.List;
+
 public interface Parser {
 
-    public ParsedExpression pars(String expression);
+    void addNewValueParser(ValueParser valueParser);
+
+    boolean parse(String expression);
+
+    String getParsedExpression();
+
+    List<Double> getOperands();
+
+    char getOperator();
 
 }

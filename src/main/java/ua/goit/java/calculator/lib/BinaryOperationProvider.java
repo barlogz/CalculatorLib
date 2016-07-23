@@ -7,9 +7,9 @@ import java.util.List;
  */
 public interface BinaryOperationProvider {
 
-    List<DefaultBinaryOperation> getBinaryOperations();
+    List<BinaryOperation> getBinaryOperations();
 
-    void addOperation (DefaultBinaryOperation binaryOperation);
+    void addOperation (BinaryOperation binaryOperation);
 
     void init();
 

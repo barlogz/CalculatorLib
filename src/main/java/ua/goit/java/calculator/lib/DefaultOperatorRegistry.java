@@ -4,10 +4,10 @@ import java.util.Map;
 
 public class DefaultOperatorRegistry implements OperatorRegistry {
 
-    private Map<OperatorDefinition, DefaultBinaryOperation> operatorRegistry;
+    private Map<OperatorDefinition, BinaryOperation> operatorRegistry;
 
     @Override
-    public DefaultBinaryOperation getOperator(OperatorDefinition definition) {
+    public BinaryOperation getOperator(OperatorDefinition definition) {
         if (!operatorRegistry.containsKey(definition)) {
             throw new UnsupportedOperationException("There is no such operation! " +
                     "Please, choose another one (\"+\" or \"-\")");
