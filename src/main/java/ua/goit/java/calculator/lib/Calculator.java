@@ -1,7 +1,5 @@
 package ua.goit.java.calculator.lib;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
-
 import java.util.List;
 
 public class Calculator {
@@ -22,7 +20,7 @@ public class Calculator {
         this.unaryOperationSet = unaryOperationSet;
     }
 
-    public double compute(String expression) throws InvalidArgumentException {
+    public double compute(String expression) throws IllegalArgumentException {
 
         boolean operatorFound = false;
         double result = 0;
@@ -47,7 +45,6 @@ public class Calculator {
         if (!operatorFound) {
             throw new IllegalArgumentException("Operator not found: '" + parser.getOperator() + "'");
         }
-
         return result;
     }
 

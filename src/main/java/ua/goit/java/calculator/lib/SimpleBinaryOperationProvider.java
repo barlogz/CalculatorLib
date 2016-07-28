@@ -3,7 +3,7 @@ package ua.goit.java.calculator.lib;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SimpleBinaryOperationProvider implements BinaryOperationProvider {
+class SimpleBinaryOperationProvider implements BinaryOperationProvider {
 
     private List<BinaryOperation> binaryOperations = new ArrayList<>();
 
