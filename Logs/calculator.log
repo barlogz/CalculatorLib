@@ -1,0 +1,33 @@
+2016-08-11 17:18:04,071 TRACE - Enter Calculator: Method 'compute' called with parameters: [2 + 3]
+2016-08-11 17:18:04,075 INFO  - Calculator: Method operate with expression: '2 + 3'
+2016-08-11 17:18:04,075 INFO  - Parser: Expression '2 + 3' is processed...
+2016-08-11 17:18:04,130 INFO  - Parser: Expression '2 + 3' parsed successful
+2016-08-11 17:18:04,131 TRACE - Exit with(Calculator: Method 'compute' is finished)
+2016-08-11 17:18:04,131 INFO  - Calculator: Expression '2 + 3' calculated successful. Result = 5.0
+2016-08-11 17:18:04,131 TRACE - Enter Calculator: Method 'compute' called with parameters: [10 * 20]
+2016-08-11 17:18:04,132 INFO  - Calculator: Method operate with expression: '10 * 20'
+2016-08-11 17:18:04,132 INFO  - Parser: Expression '10 * 20' is processed...
+2016-08-11 17:18:04,133 INFO  - Parser: Expression '10 * 20' parsed successful
+2016-08-11 17:18:04,133 ERROR - Calculator: Thrown exception: java.lang.IllegalArgumentException: Operator not found: '*'. Expression: '10 * 20'
+2016-08-11 17:18:04,135 TRACE - Enter Calculator: Method 'compute' called with parameters: [10 * 20]
+2016-08-11 17:18:04,138 INFO  - Calculator: Method operate with expression: '10 * 20'
+2016-08-11 17:18:04,138 INFO  - Parser: Expression '10 * 20' is processed...
+2016-08-11 17:18:04,138 INFO  - Parser: Expression '10 * 20' parsed successful
+2016-08-11 17:18:04,138 TRACE - Exit with(Calculator: Method 'compute' is finished)
+2016-08-11 17:18:04,139 INFO  - Calculator: Expression '10 * 20' calculated successful. Result = 200.0
+2016-08-11 17:18:04,139 TRACE - Enter Calculator: Method 'compute' called with parameters: [s 20]
+2016-08-11 17:18:04,139 INFO  - Calculator: Method operate with expression: 's 20'
+2016-08-11 17:18:04,140 INFO  - Parser: Expression 's 20' is processed...
+2016-08-11 17:18:04,140 INFO  - Parser: Expression 's 20' parsed successful
+2016-08-11 17:18:04,141 ERROR - Calculator: Thrown exception: java.lang.IllegalArgumentException: Operator not found: 's'. Expression: 's 20'
+2016-08-11 17:18:04,145 TRACE - Enter Calculator: Method 'compute' called with parameters: [s 20]
+2016-08-11 17:18:04,147 INFO  - Calculator: Method operate with expression: 's 20'
+2016-08-11 17:18:04,147 INFO  - Parser: Expression 's 20' is processed...
+2016-08-11 17:18:04,148 INFO  - Parser: Expression 's 20' parsed successful
+2016-08-11 17:18:04,149 TRACE - Exit with(Calculator: Method 'compute' is finished)
+2016-08-11 17:18:04,149 INFO  - Calculator: Expression 's 20' calculated successful. Result = 400.0
+2016-08-11 17:18:04,149 TRACE - Enter Calculator: Method 'compute' called with parameters: [asd + fds]
+2016-08-11 17:18:04,149 INFO  - Calculator: Method operate with expression: 'asd + fds'
+2016-08-11 17:18:04,149 INFO  - Parser: Expression 'asd + fds' is processed...
+2016-08-11 17:18:04,150 ERROR - Parser: Thrown exception: java.lang.NumberFormatException: Wrong value: asd. 'asd + fds' can not be processed
+2016-08-11 17:18:04,150 ERROR - Calculator: Thrown exception: java.lang.NumberFormatException: Wrong value: asd. Expression: 'asd + fds'

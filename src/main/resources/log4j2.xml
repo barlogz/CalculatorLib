@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Configuration status="WARN">
-    xmlns="jar:C:\Users\Roman\.m2\repository\org\apache\logging\log4j\log4j-core\2.6.2\log4j-core-2.6.2.jar!\Log4j-config.xsd">
-    xmlns="http://logging.apache.org/log4j/2.6.2/config"
+    xmlns="jar://C:/Users/Roman/.m2/repository/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar!/Log4j-config.xsd">
+
     <Appenders>
 
         <Console name="Console" target="SYSTEM_OUT">
@@ -16,9 +16,9 @@
 
     <Loggers>
 
-        <Logger name="ua.goit.java.calculator.lib.LogAspect" level="ERROR">
-        <AppenderRef ref="Console"/>
-        </Logger>
+        <!--<Logger name="ua.goit.java.calculator.lib.LogAspect" level="ERROR">-->
+        <!--<AppenderRef ref="Console"/>-->
+        <!--</Logger>-->
 
         <Root level="TRACE">
             <AppenderRef ref="fileTrace" />
