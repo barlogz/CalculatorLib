@@ -50,4 +50,10 @@ public class AppConfigCalculator {
     public OperandParser operandParser() {
         return new OperandParser();
     }
+
+    @Bean
+    public LogAspect logAspect() {
+        return new LogAspect();
+    }
+
 }

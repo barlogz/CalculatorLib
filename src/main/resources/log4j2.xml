@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="WARN">
+    xmlns="jar:C:\Users\Roman\.m2\repository\org\apache\logging\log4j\log4j-core\2.6.2\log4j-core-2.6.2.jar!\Log4j-config.xsd">
+    xmlns="http://logging.apache.org/log4j/2.6.2/config"
+    <Appenders>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level - %msg%n"/>
+        </Console>
+
+        <File name="fileTrace" fileName="Logs/calculator.log">
+            <PatternLayout pattern="%d %-5level - %msg%n"/>
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+
+        <Logger name="ua.goit.java.calculator.lib.LogAspect" level="ERROR">
+        <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Root level="TRACE">
+            <AppenderRef ref="fileTrace" />
+        </Root>
+
+    </Loggers>
+</Configuration>
